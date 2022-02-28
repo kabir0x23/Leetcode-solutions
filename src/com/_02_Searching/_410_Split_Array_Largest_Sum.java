@@ -2,7 +2,7 @@ package com._02_Searching;
 
 public class _410_Split_Array_Largest_Sum {
     public static void main(String[] args) {
-        int[] arr = {7,2,5,10,8};
+        int[] arr = {7, 2, 5, 10, 8};
         int m = 2;
         System.out.println(splitArray(arr, m));
 
@@ -39,19 +39,4 @@ public class _410_Split_Array_Largest_Sum {
         }
         return end;
     }
-
-
-    static int binarySearch(int[] arr, int target, int start, int end) {
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
-            if (target < arr[mid]) {
-                end = mid - 1;
-            } else if (target > arr[mid]) {
-                start = mid + 1;
-            } else
-                return mid;
-        }
-        return -1;
-    }
-
 }
