@@ -3,7 +3,7 @@ package com._01_Arrays;
 // link: https://leetcode.com/problems/richest-customer-wealth/
 public class _1672_Richest_Customer_Wealth {
     public static void main(String[] args) {
-        int[][] accounts = {{1, 2, 3}, {3, 2, 1}};
+        int[][] accounts = {{2, 8, 7}, {7, 1, 3}, {1, 9, 5}};
         System.out.println(maximumWealth(accounts));
     }
 
