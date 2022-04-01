@@ -4,11 +4,10 @@ public class _1832_Check_if_the_Sentence_Is_Pangram {
     public static void main(String[] args) {
         String sentence = "thequickbrownfoxjumpsoverthelazydog";
         System.out.println(checkIfPangram((sentence)));
-
     }
 
     static boolean checkIfPangram(String sentence) {
-        boolean[] mark = new boolean[26];
+        boolean[] mark = new boolean[sentence.length()];
         int index = 0;
         for (int i = 0; i < sentence.length(); i++) {
 
@@ -27,4 +26,5 @@ public class _1832_Check_if_the_Sentence_Is_Pangram {
         }
         return (true);
     }
+
 }
