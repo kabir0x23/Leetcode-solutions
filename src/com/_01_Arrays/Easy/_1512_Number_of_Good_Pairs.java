@@ -1,4 +1,4 @@
-package com._01_Arrays;
+package com._01_Arrays.Easy;
 
 public class _1512_Number_of_Good_Pairs {
     public static void main(String[] args) {

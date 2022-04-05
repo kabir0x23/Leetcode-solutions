@@ -1,4 +1,4 @@
-package com._01_Arrays;
+package com._01_Arrays.Easy;
 
 // link: https://leetcode.com/problems/richest-customer-wealth/
 public class _1672_Richest_Customer_Wealth {

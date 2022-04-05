@@ -1,4 +1,4 @@
-package com._01_Arrays;
+package com._01_Arrays.Easy;
 
 public class _1832_Check_if_the_Sentence_Is_Pangram {
     public static void main(String[] args) {

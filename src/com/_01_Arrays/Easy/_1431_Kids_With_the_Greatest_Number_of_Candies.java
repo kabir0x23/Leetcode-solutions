@@ -1,4 +1,4 @@
-package com._01_Arrays;
+package com._01_Arrays.Easy;
 
 import java.util.*;
 
