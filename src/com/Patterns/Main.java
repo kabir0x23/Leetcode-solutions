@@ -16,10 +16,10 @@ public class Main {
 //        pattern11(n);
 //        pattern12(n); // pending
 //        pattern13(n); // pending
-//        pattern17(n);
+        pattern17(n);
 //        pattern28(n);
 //        pattern30(n);
-        pattern31(n);
+//        pattern31(n);
     }
 
     static void pattern1(int n) {
