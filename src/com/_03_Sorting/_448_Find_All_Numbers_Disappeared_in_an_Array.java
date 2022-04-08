@@ -1,13 +1,11 @@
 package com._03_Sorting;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 class _448_Find_All_Numbers_Disappeared_in_an_Array {
     public static void main(String[] args) {
         int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
-        findDisappearedNumbers(arr);
+        System.out.println(findDisappearedNumbers(arr));
     }
 
     static List<Integer> findDisappearedNumbers(int[] nums) {
