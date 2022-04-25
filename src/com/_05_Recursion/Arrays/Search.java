@@ -10,7 +10,9 @@ public class Search {
 //        System.out.println(searchIndexLast(arr, 18, arr.length - 1));
 //        searchAllIndex(arr, 18, 0);
 //        System.out.println(list);
-        ArrayList<Integer> ans = searchAllIndex(arr, 18, 0, new ArrayList<>());
+//        ArrayList<Integer> ans = searchAllIndex(arr, 18, 0, new ArrayList<>());
+//        System.out.println(ans);
+        ArrayList<Integer> ans = searchAllIndex2(arr, 18, 0);
         System.out.println(ans);
 
     }
@@ -72,5 +74,19 @@ public class Search {
             list.add(index);
         }
         return searchAllIndex(arr, target, index + 1, list);
+    }
+
+    static ArrayList<Integer> searchAllIndex2(int[] arr, int target, int index) {
+        ArrayList<Integer> list = new ArrayList<>();
+        if (index == arr.length) {
+            return list;
+        }
+        // this will contain answer for that function call only
+        if (target == arr[index]) {
+            list.add(index);
+        }
+        ArrayList<Integer> ansFromBelowCalls = searchAllIndex2(arr, target, index + 1);
+        list.addAll(ansFromBelowCalls);
+        return list;
     }
 }
