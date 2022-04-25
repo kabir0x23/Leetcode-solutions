@@ -18,14 +18,13 @@ public class CyclicSort {
             } else i++;
         }
 
-//        for (int i = 1; i < arr.length; i++) {
+//        for (int i = 0; i < arr.length; i++) {
 //            int correctIndex = arr[i] - 1;
 //            if (arr[correctIndex] != arr[i]) {
 //                swap(arr, i, correctIndex);
 //            } else {
 //                i++;
 //            }
-//
 //        }
     }
 
