@@ -7,10 +7,9 @@ public class _1832_Check_if_the_Sentence_Is_Pangram {
     }
 
     static boolean checkIfPangram(String sentence) {
-        boolean[] mark = new boolean[sentence.length()];
+        boolean[] mark = new boolean[26];
         int index = 0;
         for (int i = 0; i < sentence.length(); i++) {
-
             if ('A' <= sentence.charAt(i) && sentence.charAt(i) <= 'Z') {
                 index = sentence.charAt(i) - 'A';
             } else if ('a' <= sentence.charAt(i) && sentence.charAt(i) <= 'z') {
@@ -19,12 +18,12 @@ public class _1832_Check_if_the_Sentence_Is_Pangram {
             mark[index] = true;
         }
 
-        for (int i = 0; i <= 25; i++) {
-            if (!mark[i]) {
+        for (int j = 0; j <= 25; j++) {
+            if (!mark[j])
                 return false;
-            }
         }
-        return (true);
+        return true;
     }
+
 
 }
