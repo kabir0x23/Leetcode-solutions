@@ -22,11 +22,11 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
+*/.idea/
+*/.idea/**/tasks.xml
+*/.idea/**/usage.statistics.xml
+*/.idea/**/dictionaries
+*/.idea/**/shelf
 
 # AWS User-specific
 .idea/**/aws.xml
@@ -70,7 +70,7 @@ cmake-build-*/
 *.iws
 
 # IntelliJ
-out/
+*/out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -195,3 +195,25 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij,windows,visualstudiocode,git
 .dccache
+.idea/description.html
+.idea/encodings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/project-template.xml
+.idea/vcs.xml
+.idea/description.html
+.idea/encodings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/project-template.xml
+.idea/vcs.xml
+Java/Java.iml
+.idea/description.html
+.idea/encodings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/project-template.xml
+.idea/vcs.xml
