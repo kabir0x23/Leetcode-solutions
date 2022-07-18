@@ -1,0 +1,35 @@
+package com._02_Searching;
+
+public class _69_Sqrt_x_ {
+    public static void main(String[] args) {
+        int x = 4;
+        System.out.println(mySqrt(x));
+    }
+
+    static int mySqrt(int x) {
+        int start = 1;
+        int end = x / 2;
+        int sqrt = start + (end - start) / 2;
+        System.out.println(sqrt);
+
+        if (x == 0) {
+            return 0;
+        }
+
+        while (start <= end) {
+            if (sqrt == x / sqrt) {
+                return sqrt;
+            } else if (sqrt > x / sqrt) {
+                end = sqrt - 1;
+            } else if (sqrt < x / sqrt) {
+                start = sqrt + 1;
+            }
+            sqrt = start + (end - start) / 2;
+        }
+        if (sqrt > x / sqrt) {
+            return sqrt - 1;
+        } else {
+            return sqrt;
+        }
+    }
+}
